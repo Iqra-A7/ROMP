@@ -39,10 +39,13 @@ This project is great for portfolio and frontend practice.
 
 ## 🛠️ Tech Stack
 
+
 - HTML5  
-- CSS3 (Flexbox + Grid)  
+- Tailwind CSS (CDN)  
 - JavaScript (DOM manipulation)  
+- Framer Motion (CDN animation effects)  
 - GitHub Pages (Hosting)
+
 
 ---
 
