@@ -1,0 +1,1096 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>ROMP. Oversized Premium Hoodie | Wear Your Attitude</title>
+  <meta name="description" content="The ROMP Oversized Premium Hoodie — crafted for comfort, designed for impact. 450gsm heavyweight fleece. Available in Black, Gray, Cream & Chaos Edition. Limited drops. Free worldwide shipping.">
+  <meta name="keywords" content="ROMP hoodie, oversized hoodie, premium streetwear, limited edition hoodie, custom hoodie">
+  <meta name="author" content="ROMP">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://romphoodie.com/">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="product">
+  <meta property="og:title" content="ROMP Oversized Premium Hoodie">
+  <meta property="og:description" content="Premium hoodies crafted for comfort, designed for impact. Limited pieces. Maximum energy.">
+  <meta property="og:image" content="public/hoodie-black.png">
+  <meta property="og:url" content="https://romphoodie.com/">
+  <meta property="og:site_name" content="ROMP">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ROMP Oversized Premium Hoodie">
+  <meta name="twitter:description" content="Premium hoodies crafted for comfort. Limited drops.">
+  <meta name="twitter:image" content="public/hoodie-black.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="icon.svg">
+  <link rel="apple-touch-icon" href="apple-icon.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Space Grotesk','Inter','system-ui','sans-serif'],
+            mono: ['Space Mono','monospace'],
+          },
+          colors: {
+            background: '#0a0a0a',
+            surface: '#111111',
+            accent: '#3b82f6',
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Motion One via unpkg (avoids tracking-prevention issues with jsdelivr) -->
+  <script src="https://unpkg.com/motion@10.18.0/dist/motion.js"></script>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-background text-white font-sans antialiased overflow-x-hidden">
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- =============================================
+       LOADING SCREEN
+       ============================================= -->
+  <div id="loading-screen" role="status" aria-label="Loading ROMP">
+    <div class="brand">ROMP.</div>
+    <div class="loading-bar-track">
+      <div class="loading-bar-fill"></div>
+    </div>
+    <p style="font-size:.72rem;color:rgba(255,255,255,.35);letter-spacing:.12em;text-transform:uppercase;margin-top:-4px">Crafting your experience</p>
+  </div>
+
+  <!-- =============================================
+       NAVBAR — FIX: larger tap targets, better contrast
+       ============================================= -->
+  <nav id="navbar" class="fixed top-3 left-1/2 -translate-x-1/2 z-50 w-[96%] max-w-6xl transition-all duration-300" role="navigation" aria-label="Main navigation">
+    <div class="navbar-glass rounded-full px-5 py-3 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#" class="text-xl font-black tracking-tight font-mono hover:opacity-80 transition-opacity" aria-label="ROMP — Return to top">ROMP.</a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-0.5 rounded-full px-1.5 py-1.5">
+        <a href="#" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-white/70 hover:text-white transition-all">Home</a>
+        <a href="#showcase" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-white/70 hover:text-white transition-all">Showcase</a>
+        <a href="#collections" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-white/70 hover:text-white transition-all">Collections</a>
+        <a href="#customize" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-white/70 hover:text-white transition-all">Customize</a>
+        <a href="#lookbook" class="nav-link px-4 py-2 rounded-full text-sm font-semibold text-white/70 hover:text-white transition-all">Lookbook</a>
+      </div>
+
+      <!-- Right Actions -->
+      <div class="flex items-center gap-2">
+        <!-- Cart -->
+        <button class="hidden sm:flex p-2.5 rounded-full hover:bg-white/10 transition-colors relative" aria-label="Cart, 2 items">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/>
+          </svg>
+          <span class="absolute -top-0.5 -right-0.5 w-4 h-4 bg-accent text-[10px] font-bold rounded-full flex items-center justify-center" aria-hidden="true">2</span>
+        </button>
+
+        <!-- CTA -->
+        <a href="#customize" class="hidden sm:flex items-center gap-2 bg-white text-black px-5 py-2.5 rounded-full text-sm font-bold hover:bg-white/90 transition-all btn-animate shadow-md shadow-white/10">
+          Customize
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7v10"/>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Button — FIX: larger hit target, aria-expanded -->
+        <button id="mobile-menu-btn"
+          class="md:hidden p-3 rounded-full hover:bg-white/10 transition-colors"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu">
+          <div class="hamburger flex flex-col gap-[5px]" aria-hidden="true">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </div>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu — FIX: fuller width, visible background, larger links -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 rounded-2xl p-4" role="menu" aria-label="Mobile navigation">
+      <nav class="flex flex-col gap-1">
+        <a href="#" class="px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-white/10 transition-all text-white/85" role="menuitem">Home</a>
+        <a href="#showcase" class="px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-white/10 transition-all text-white/85" role="menuitem">Showcase</a>
+        <a href="#collections" class="px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-white/10 transition-all text-white/85" role="menuitem">Collections</a>
+        <a href="#customize" class="px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-white/10 transition-all text-white/85" role="menuitem">Customize</a>
+        <a href="#lookbook" class="px-4 py-3.5 rounded-xl text-base font-semibold hover:bg-white/10 transition-all text-white/85" role="menuitem">Lookbook</a>
+        <div class="pt-3 mt-1 border-t border-white/10">
+          <a href="#customize" class="w-full flex items-center justify-center gap-2 bg-white text-black px-5 py-3.5 rounded-xl text-sm font-bold hover:bg-white/90 transition-colors">
+            Customize Your Hoodie →
+          </a>
+        </div>
+      </nav>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <!-- =============================================
+         HERO — FIX: grid-hero class, card redesigned, swatches larger
+         ============================================= -->
+    <section id="hero" class="relative flex items-center overflow-hidden" aria-labelledby="hero-heading">
+
+      <!-- Background watermark -->
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none select-none overflow-hidden" aria-hidden="true">
+        <span class="text-[22vw] font-black text-white/[0.025] tracking-tighter leading-none font-mono">ROMP</span>
+      </div>
+
+      <!-- Hero glow -->
+      <div class="hero-glow absolute top-1/2 left-1/2 w-[90vw] h-[90vw] max-w-[700px] max-h-[700px] bg-accent/15 rounded-full blur-[160px] pointer-events-none -translate-x-1/2 -translate-y-1/2" aria-hidden="true"></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <!-- 3-column grid — 1 col on mobile, 2 col on tablet, 3 col on desktop -->
+        <div class="grid-hero grid lg:grid-cols-3 gap-8 lg:gap-6 items-center">
+
+          <!-- LEFT: Text Content -->
+          <div class="hero-text-col order-2 lg:order-1 text-center lg:text-left">
+
+            <!-- Badge -->
+            <div id="hero-badge" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/8 border border-white/15 mb-6">
+              <span class="w-2 h-2 bg-accent rounded-full accent-pulse" aria-hidden="true"></span>
+              <span class="text-sm font-semibold text-white/80">New Drop Available Now</span>
+            </div>
+
+            <!-- Headline -->
+            <h1 id="hero-heading" class="text-5xl sm:text-6xl lg:text-7xl font-black leading-[0.93] tracking-tight mb-5">
+              WEAR YOUR<br>
+              <span class="text-white">ATTITUDE.</span>
+            </h1>
+
+            <!-- Sub -->
+            <p id="hero-sub" class="text-white/70 text-base sm:text-lg max-w-sm mx-auto lg:mx-0 mb-2 leading-relaxed">
+              The <strong class="text-white font-bold">ROMP Oversized Premium Hoodie</strong> —
+              crafted for comfort, designed for impact.
+            </p>
+            <p class="text-white/45 text-sm mb-8 font-medium">Limited pieces. Maximum energy.</p>
+
+            <!-- CTAs — FIX: use btn-primary / btn-secondary classes -->
+            <div id="hero-cta" class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3">
+              <a href="#showcase" class="btn-primary btn-animate group">
+                Explore Colors
+                <svg class="w-4 h-4 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7v10"/>
+                </svg>
+              </a>
+              <a href="#customize" class="btn-secondary btn-animate">
+                Customize Yours
+              </a>
+            </div>
+
+            <!-- FIX: Trust signals below CTA -->
+            <div class="flex flex-wrap items-center gap-4 mt-6 justify-center lg:justify-start">
+              <span class="trust-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+                Free worldwide shipping
+              </span>
+              <span class="trust-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                30-day returns
+              </span>
+              <span class="trust-badge">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+                Secure checkout
+              </span>
+            </div>
+          </div>
+
+          <!-- CENTER: Hoodie -->
+          <div class="hero-hoodie-col order-1 lg:order-2 relative flex items-center justify-center">
+            <div id="hoodie-container" class="relative w-full max-w-sm mx-auto floating-animation">
+              <!-- FIX: correct image filename -->
+              <img
+                id="main-hoodie"
+                src="black.img.png"
+                alt="ROMP Oversized Premium Hoodie in Black"
+                class="w-full h-auto"
+                style="filter:drop-shadow(0 0 70px rgba(59,130,246,0.35)) drop-shadow(0 40px 40px rgba(0,0,0,0.5));"
+                loading="eager"
+              >
+            </div>
+          </div>
+
+          <!-- RIGHT: Product Card — FIX: wider (w-72), stronger glass, bigger swatches -->
+          <div id="hero-card" class="hero-card-col order-3 flex justify-center lg:justify-end">
+            <div class="hero-card-glass rounded-[28px] p-6 w-72">
+
+              <!-- Scarcity signal -->
+              <div class="flex items-center justify-between mb-4">
+                <span class="scarcity-pill">
+                  <span class="scarcity-dot"></span>
+                  Only 12 left
+                </span>
+                <span class="stars text-sm" aria-label="5 star rating">★★★★★</span>
+              </div>
+
+              <!-- Product name -->
+              <h3 class="text-base font-bold leading-tight mb-1">ROMP Oversized Premium</h3>
+              <p class="text-xs text-white/50 mb-4">450gsm heavyweight fleece</p>
+
+              <!-- Color selector — FIX: swatches are now w-7 h-7 (was w-3 h-3) -->
+              <div class="mb-4">
+                <p class="text-xs font-semibold uppercase tracking-widest text-white/50 mb-2.5">Color</p>
+                <div class="flex items-center gap-3" role="group" aria-label="Select hoodie color">
+                  <button class="color-swatch w-7 h-7 rounded-full bg-[#1a1a1a] border-2 border-white/40 active"
+                    data-color="black" aria-label="Black" aria-pressed="true" title="Black"></button>
+                  <button class="color-swatch w-7 h-7 rounded-full bg-[#6b7280] border-2 border-transparent"
+                    data-color="gray" aria-label="Gray" aria-pressed="false" title="Gray"></button>
+                  <button class="color-swatch w-7 h-7 rounded-full bg-[#e8dcc8] border-2 border-transparent"
+                    data-color="cream" aria-label="Cream" aria-pressed="false" title="Cream"></button>
+                  <button class="color-swatch w-7 h-7 rounded-full border-2 border-transparent"
+                    data-color="chaos" aria-label="Chaos Edition" aria-pressed="false" title="Chaos Edition"
+                    style="background:linear-gradient(135deg,#ff6b35,#f7931e,#fcee21,#00d2d3,#4158d0)"></button>
+                </div>
+              </div>
+
+              <!-- Size quick-select -->
+              <div class="mb-5">
+                <p class="text-xs font-semibold uppercase tracking-widest text-white/50 mb-2.5">Size</p>
+                <div class="flex gap-2" role="group" aria-label="Select size">
+                  <button class="size-btn px-3 py-1.5 rounded-lg text-xs font-bold border border-white/15 bg-white/6 hover:border-white/35 hover:bg-white/12 transition-all active-size" aria-pressed="false">S</button>
+                  <button class="size-btn px-3 py-1.5 rounded-lg text-xs font-bold border border-white/15 bg-white/6 hover:border-white/35 hover:bg-white/12 transition-all" aria-pressed="false">M</button>
+                  <button class="size-btn px-3 py-1.5 rounded-lg text-xs font-bold border border-white/15 bg-white/6 hover:border-white/35 hover:bg-white/12 transition-all" aria-pressed="false">L</button>
+                  <button class="size-btn px-3 py-1.5 rounded-lg text-xs font-bold border border-white/15 bg-white/6 hover:border-white/35 hover:bg-white/12 transition-all" aria-pressed="false">XL</button>
+                  <button class="size-btn px-3 py-1.5 rounded-lg text-xs font-bold border border-white/15 bg-white/6 hover:border-white/35 hover:bg-white/12 transition-all" aria-pressed="false">XXL</button>
+                </div>
+              </div>
+
+              <!-- Price & CTA -->
+              <div class="flex items-center justify-between">
+                <div>
+                  <p class="text-2xl font-black">$89.00</p>
+                  <p class="text-xs text-white/45 mt-0.5">Free shipping</p>
+                </div>
+                <a href="#customize" class="btn-animate flex items-center gap-1.5 bg-white text-black px-4 py-2.5 rounded-full text-sm font-bold hover:bg-white/90 transition-all">
+                  Order
+                  <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M7 17L17 7M17 7H7M17 7v10"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- /grid-hero -->
+      </div>
+    </section>
+
+    <!-- =============================================
+         FEATURES BAR
+         ============================================= -->
+    <section class="relative z-10 py-8 border-y border-white/[0.08] bg-white/[0.02] backdrop-blur-sm" aria-label="Product guarantees">
+      <div class="container mx-auto px-4">
+        <div class="features-grid grid grid-cols-2 md:grid-cols-4 gap-5 stagger-group">
+
+          <div class="flex items-center gap-3 justify-center md:justify-start reveal-element">
+            <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/15 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Premium Quality</h4>
+              <p class="text-xs text-white/50">450gsm fleece</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 justify-center md:justify-start reveal-element">
+            <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/15 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Limited Drops</h4>
+              <p class="text-xs text-white/50">Exclusive designs</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 justify-center md:justify-start reveal-element">
+            <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/15 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Worldwide Shipping</h4>
+              <p class="text-xs text-white/50">Fast &amp; secure</p>
+            </div>
+          </div>
+
+          <div class="flex items-center gap-3 justify-center md:justify-start reveal-element">
+            <div class="w-10 h-10 rounded-xl bg-accent/10 border border-accent/15 flex items-center justify-center flex-shrink-0" aria-hidden="true">
+              <svg class="w-5 h-5 text-accent/80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/>
+              </svg>
+            </div>
+            <div>
+              <h4 class="font-bold text-sm text-white">Easy Returns</h4>
+              <p class="text-xs text-white/50">30-day hassle free</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         STATISTICS
+         ============================================= -->
+    <section id="stats" class="py-20 md:py-24 relative" aria-labelledby="stats-heading">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 reveal-element">
+          <span class="section-label">By the numbers</span>
+          <h2 id="stats-heading" class="text-3xl sm:text-4xl font-black mt-3">The ROMP Effect</h2>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 stagger-group">
+
+          <div class="stat-card glass-card rounded-2xl p-6 text-center reveal-element">
+            <p class="text-4xl sm:text-5xl font-black font-mono mb-2 text-white">
+              <span data-count="5000" data-suffix="+">0</span>
+            </p>
+            <p class="text-white/60 text-sm uppercase tracking-wide font-semibold">Happy Customers</p>
+          </div>
+
+          <div class="stat-card glass-card rounded-2xl p-6 text-center reveal-element">
+            <p class="text-4xl sm:text-5xl font-black font-mono mb-2 text-white">
+              <span data-count="120" data-suffix="+">0</span>
+            </p>
+            <p class="text-white/60 text-sm uppercase tracking-wide font-semibold">Limited Drops</p>
+          </div>
+
+          <div class="stat-card glass-card rounded-2xl p-6 text-center reveal-element">
+            <p class="text-4xl sm:text-5xl font-black font-mono mb-2 text-white">
+              4.9<span class="text-2xl text-white/50">/5</span>
+            </p>
+            <p class="text-white/60 text-sm uppercase tracking-wide font-semibold">Average Rating</p>
+          </div>
+
+          <div class="stat-card glass-card rounded-2xl p-6 text-center reveal-element">
+            <p class="text-4xl sm:text-5xl font-black font-mono mb-2 text-white">
+              <span data-count="24" data-suffix="h">0</span>
+            </p>
+            <p class="text-white/60 text-sm uppercase tracking-wide font-semibold">Dispatch Time</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         SHOWCASE / COLOR SELECTOR
+         ============================================= -->
+    <section id="showcase" class="py-20 md:py-28 relative" aria-labelledby="showcase-heading">
+      <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  w-[80vw] h-[80vw] max-w-[600px] max-h-[600px] bg-accent/8 rounded-full blur-[130px] pointer-events-none" aria-hidden="true"></div>
+
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="text-center mb-14 reveal-element">
+          <span class="section-label">Interactive Showcase</span>
+          <h2 id="showcase-heading" class="text-3xl sm:text-5xl font-black mt-3">Find Your Color</h2>
+          <p class="text-white/60 mt-3 max-w-md mx-auto">Four distinct colorways. One iconic silhouette. Pick yours.</p>
+        </div>
+
+        <div class="lg:grid-cols-2 grid gap-10 lg:gap-16 items-center max-w-5xl mx-auto">
+
+          <!-- Hoodie display -->
+          <div class="relative flex items-center justify-center">
+            <div class="absolute w-80 h-80 bg-accent/10 rounded-full blur-[80px]" aria-hidden="true"></div>
+            <div id="showcase-hoodie-wrap" class="relative w-full max-w-sm floating-animation">
+              <img
+                id="showcase-hoodie"
+                src="hoodie-black.png"
+                alt="ROMP Oversized Premium Hoodie — Black colorway"
+                class="w-full h-auto"
+                style="filter:drop-shadow(0 0 80px rgba(59,130,246,0.28)) drop-shadow(0 30px 30px rgba(0,0,0,0.4));"
+                loading="lazy"
+              >
+            </div>
+          </div>
+
+          <!-- Color options -->
+          <div class="space-y-7 reveal-element">
+            <div>
+              <h3 class="text-2xl font-bold mb-1">ROMP Oversized Premium Hoodie</h3>
+              <p class="text-white/55 text-sm leading-relaxed">450gsm heavyweight fleece · Oversized fit · Drop shoulder · Kangaroo pocket · Unisex sizing</p>
+            </div>
+
+            <div role="group" aria-label="Select hoodie color">
+              <p class="section-label mb-4">Select Color</p>
+              <div class="grid grid-cols-2 gap-3" id="showcase-color-options">
+
+                <button class="showcase-color-btn flex items-center gap-3 p-3.5 rounded-2xl border border-white/20 bg-white/6 transition-all duration-300 active"
+                  data-color="black" aria-pressed="true" aria-label="Select Black">
+                  <span class="w-9 h-9 rounded-full bg-[#1a1a1a] border border-white/25 flex-shrink-0"></span>
+                  <div class="text-left min-w-0">
+                    <p class="font-bold text-sm">Black</p>
+                    <p class="text-xs text-white/45">Classic stealth</p>
+                  </div>
+                  <svg class="showcase-check ml-auto w-4 h-4 text-white flex-shrink-0" style="opacity:1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </button>
+
+                <button class="showcase-color-btn flex items-center gap-3 p-3.5 rounded-2xl border border-white/10 bg-white/3 transition-all duration-300"
+                  data-color="gray" aria-pressed="false" aria-label="Select Gray">
+                  <span class="w-9 h-9 rounded-full bg-[#6b7280] border border-white/20 flex-shrink-0"></span>
+                  <div class="text-left min-w-0">
+                    <p class="font-bold text-sm">Gray</p>
+                    <p class="text-xs text-white/45">Muted edge</p>
+                  </div>
+                  <svg class="showcase-check ml-auto w-4 h-4 text-white flex-shrink-0" style="opacity:0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </button>
+
+                <button class="showcase-color-btn flex items-center gap-3 p-3.5 rounded-2xl border border-white/10 bg-white/3 transition-all duration-300"
+                  data-color="cream" aria-pressed="false" aria-label="Select Cream">
+                  <span class="w-9 h-9 rounded-full bg-[#e8dcc8] border border-white/20 flex-shrink-0"></span>
+                  <div class="text-left min-w-0">
+                    <p class="font-bold text-sm">Cream</p>
+                    <p class="text-xs text-white/45">Soft contrast</p>
+                  </div>
+                  <svg class="showcase-check ml-auto w-4 h-4 text-white flex-shrink-0" style="opacity:0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </button>
+
+                <button class="showcase-color-btn flex items-center gap-3 p-3.5 rounded-2xl border border-white/10 bg-white/3 transition-all duration-300"
+                  data-color="chaos" aria-pressed="false" aria-label="Select Chaos Edition">
+                  <span class="w-9 h-9 rounded-full border border-white/20 flex-shrink-0"
+                    style="background:linear-gradient(135deg,#ff6b35,#f7931e,#fcee21,#00d2d3,#4158d0)"></span>
+                  <div class="text-left min-w-0">
+                    <p class="font-bold text-sm">Chaos</p>
+                    <p class="text-xs text-white/45">Limited &amp; rare</p>
+                  </div>
+                  <svg class="showcase-check ml-auto w-4 h-4 text-white flex-shrink-0" style="opacity:0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/>
+                  </svg>
+                </button>
+
+              </div>
+            </div>
+
+            <div class="flex items-center justify-between pt-5 border-t border-white/10">
+              <div>
+                <p class="text-3xl font-black">$89.00</p>
+                <p class="text-xs text-white/45 mt-1">Free worldwide shipping · 30-day returns</p>
+              </div>
+              <a href="#customize" class="btn-animate flex items-center gap-2 bg-white text-black px-6 py-3.5 rounded-full font-bold hover:bg-white/90 transition-all text-sm shadow-lg shadow-white/10">
+                Order &amp; Customize →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         COLLECTIONS
+         ============================================= -->
+    <section id="collections" class="py-20 md:py-28 relative" aria-labelledby="collections-heading">
+      <div class="container mx-auto px-4">
+        <div class="grid lg:grid-cols-4 gap-8 lg:gap-6 items-start">
+
+          <!-- Left text -->
+          <div class="lg:col-span-1 reveal-element">
+            <span class="section-label">Collections</span>
+            <h2 id="collections-heading" class="text-3xl sm:text-4xl lg:text-5xl font-black leading-tight mt-3 mb-4">
+              Minimal Looks.<br>Maximum Impact.
+            </h2>
+            <p class="text-white/60 leading-relaxed mb-6 text-sm">
+              Each hoodie engineered for fit and feel. Heavyweight fleece, clean drops, bold energy.
+            </p>
+            <a href="#customize" class="btn-secondary btn-animate group inline-flex">
+              Order Yours
+              <svg class="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+              </svg>
+            </a>
+          </div>
+
+          <!-- Product cards -->
+          <div class="lg:col-span-3 grid sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger-group">
+
+            <!-- Card: Gray -->
+            <article class="product-card group reveal-element">
+              <div class="product-card-glass rounded-[20px] p-5 h-full">
+                <div class="relative mb-4 bg-gradient-to-b from-white/6 to-transparent rounded-xl overflow-hidden aspect-square flex items-center justify-center">
+                  <img src="hoodie-gray.png" alt="ROMP Shadow Script Hoodie — Gray oversized" class="w-4/5 h-auto object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="font-bold text-base">Shadow Script</h3>
+                    <p class="text-sm text-white/55 mt-0.5">Gray Oversized</p>
+                    <p class="text-lg font-black text-white mt-1">$89.00</p>
+                  </div>
+                  <button class="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all duration-300 flex-shrink-0 mt-1" aria-label="Add Shadow Script Hoodie to cart">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card: Chaos (Limited) -->
+            <article class="product-card group reveal-element">
+              <div class="product-card-glass rounded-[20px] p-5 h-full relative overflow-hidden">
+                <div class="absolute top-3 right-3 z-10">
+                  <span class="text-[10px] font-bold uppercase tracking-wider bg-gradient-to-r from-orange-400 to-pink-500 text-white px-2.5 py-1 rounded-full">Limited</span>
+                </div>
+                <div class="relative mb-4 bg-gradient-to-b from-white/6 to-transparent rounded-xl overflow-hidden aspect-square flex items-center justify-center">
+                  <img src="chaos.png" alt="ROMP Chaos Edition Hoodie — Limited colorway" class="w-4/5 h-auto object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="font-bold text-base">Chaos Edition</h3>
+                    <p class="text-sm text-white/55 mt-0.5">Rare colorway</p>
+                    <p class="text-lg font-black text-white mt-1">$94.00</p>
+                  </div>
+                  <button class="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all duration-300 flex-shrink-0 mt-1" aria-label="Add Chaos Edition Hoodie to cart">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- Card: Cream -->
+            <article class="product-card group reveal-element">
+              <div class="product-card-glass rounded-[20px] p-5 h-full">
+                <div class="relative mb-4 bg-gradient-to-b from-white/6 to-transparent rounded-xl overflow-hidden aspect-square flex items-center justify-center">
+                  <img src="hoodie-cream.png" alt="ROMP Drip Essentials Hoodie — Cream oversized" class="w-4/5 h-auto object-contain group-hover:scale-105 transition-transform duration-500" loading="lazy">
+                </div>
+                <div class="flex items-start justify-between gap-3">
+                  <div>
+                    <h3 class="font-bold text-base">Drip Essentials</h3>
+                    <p class="text-sm text-white/55 mt-0.5">Cream Oversized</p>
+                    <p class="text-lg font-black text-white mt-1">$79.00</p>
+                  </div>
+                  <button class="w-10 h-10 rounded-full bg-white/10 hover:bg-white hover:text-black flex items-center justify-center transition-all duration-300 flex-shrink-0 mt-1" aria-label="Add Drip Essentials Hoodie to cart">
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M12 4v16m8-8H4"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         TESTIMONIALS
+         ============================================= -->
+    <section id="testimonials" class="py-20 md:py-24 relative" aria-labelledby="testimonials-heading">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-12 reveal-element">
+          <span class="section-label">Customer Reviews</span>
+          <h2 id="testimonials-heading" class="text-3xl sm:text-4xl font-black mt-3">Real People. Real Energy.</h2>
+          <div class="flex justify-center items-center gap-2 mt-4" aria-label="4.9 out of 5 stars overall rating">
+            <span class="stars text-xl" aria-hidden="true">★★★★★</span>
+            <span class="text-white/65 text-sm font-semibold">4.9 / 5 from 500+ reviews</span>
+          </div>
+        </div>
+        <div class="grid md:grid-cols-3 gap-5 stagger-group">
+
+          <article class="testimonial-card glass-card rounded-2xl p-6 reveal-element" aria-label="Review by Jordan M.">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center font-bold text-lg flex-shrink-0" aria-hidden="true">J</div>
+              <div>
+                <p class="font-bold">Jordan M.</p>
+                <p class="text-xs text-white/50">Verified Buyer · New York</p>
+              </div>
+            </div>
+            <div class="stars mb-3" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <p class="text-white/75 text-sm leading-relaxed">
+              "Hands down the most comfortable hoodie I've owned. The quality is insane for the price — thick, structured, and the drop-shoulder fit is perfect. Been wearing it every day."
+            </p>
+          </article>
+
+          <article class="testimonial-card glass-card rounded-2xl p-6 reveal-element" aria-label="Review by Alex K.">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-orange-400 to-red-500 flex items-center justify-center font-bold text-lg flex-shrink-0" aria-hidden="true">A</div>
+              <div>
+                <p class="font-bold">Alex K.</p>
+                <p class="text-xs text-white/50">Verified Buyer · London</p>
+              </div>
+            </div>
+            <div class="stars mb-3" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <p class="text-white/75 text-sm leading-relaxed">
+              "Got the Chaos Edition and it's an absolute statement piece. Shipping was fast, packaging was premium. ROMP has become my go-to brand — already ordered two more."
+            </p>
+          </article>
+
+          <article class="testimonial-card glass-card rounded-2xl p-6 reveal-element" aria-label="Review by Sam T.">
+            <div class="flex items-center gap-3 mb-4">
+              <div class="w-12 h-12 rounded-full bg-gradient-to-br from-green-400 to-teal-500 flex items-center justify-center font-bold text-lg flex-shrink-0" aria-hidden="true">S</div>
+              <div>
+                <p class="font-bold">Sam T.</p>
+                <p class="text-xs text-white/50">Verified Buyer · Sydney</p>
+              </div>
+            </div>
+            <div class="stars mb-3" aria-label="5 out of 5 stars" role="img">★★★★★</div>
+            <p class="text-white/75 text-sm leading-relaxed">
+              "The cream colourway is stunning. Custom text on the back was spot-on. Customer service was brilliant when I had a sizing question. Will definitely order again!"
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         CUSTOMIZATION FORM — FIX: larger inputs, char counter, better UX
+         ============================================= -->
+    <section id="customize" class="py-20 md:py-28 relative" aria-labelledby="customize-heading">
+      <div class="absolute inset-0 flex items-center justify-center pointer-events-none" aria-hidden="true">
+        <div class="w-[700px] h-[700px] bg-accent/6 rounded-full blur-[150px]"></div>
+      </div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-2xl mx-auto">
+
+          <div class="text-center mb-10 reveal-element">
+            <span class="section-label">Made for You</span>
+            <h2 id="customize-heading" class="text-3xl sm:text-4xl font-black mt-3">Customize Your Hoodie</h2>
+            <p class="text-white/60 mt-3">Fill in your details and we'll craft your perfect ROMP hoodie within 24 hours.</p>
+          </div>
+
+          <div class="glass-card rounded-[28px] p-6 sm:p-8 reveal-element">
+
+            <!-- Success state -->
+            <div id="form-success" class="form-success-msg" role="alert" aria-live="polite">
+              <svg class="w-14 h-14 mx-auto mb-4 text-green-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+              <h3 class="text-xl font-bold mb-2">Order Received! 🎉</h3>
+              <p class="text-green-300/80 text-sm leading-relaxed">Thanks for your customization request. We'll email you within 24 hours to confirm your order. Check your spam folder if you don't hear from us.</p>
+            </div>
+
+            <!--
+              ====================================================
+              FORMSPREE SETUP:
+              1. Visit https://formspree.io — create a free account
+              2. Create a new form — copy your endpoint URL
+              3. In script.js, replace 'YOUR_FORM_ID' with the ID
+                 from your Formspree URL (after /f/)
+              ====================================================
+            -->
+            <form id="custom-form" novalidate aria-label="Hoodie customization order form">
+              <div class="grid sm:grid-cols-2 gap-5">
+
+                <!-- Name -->
+                <div class="form-group">
+                  <label class="form-label" for="form-name">
+                    Full Name <span class="text-red-400" aria-hidden="true">*</span>
+                  </label>
+                  <input id="form-name" name="name" type="text" class="form-input"
+                    placeholder="Your full name" required autocomplete="name"
+                    aria-required="true" aria-describedby="form-name-error">
+                  <span id="form-name-error" class="form-error" role="alert">Please enter your name.</span>
+                </div>
+
+                <!-- Email -->
+                <div class="form-group">
+                  <label class="form-label" for="form-email">
+                    Email Address <span class="text-red-400" aria-hidden="true">*</span>
+                  </label>
+                  <input id="form-email" name="email" type="email" class="form-input"
+                    placeholder="your@email.com" required autocomplete="email"
+                    aria-required="true" aria-describedby="form-email-error">
+                  <span id="form-email-error" class="form-error" role="alert">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Size -->
+                <div class="form-group">
+                  <label class="form-label" for="form-size">
+                    Hoodie Size <span class="text-red-400" aria-hidden="true">*</span>
+                  </label>
+                  <select id="form-size" name="size" class="form-input" required
+                    aria-required="true" aria-describedby="form-size-error">
+                    <option value="" disabled selected>Choose your size</option>
+                    <option value="S">S — Small</option>
+                    <option value="M">M — Medium</option>
+                    <option value="L">L — Large</option>
+                    <option value="XL">XL — Extra Large</option>
+                    <option value="XXL">XXL — Double Extra Large</option>
+                  </select>
+                  <span id="form-size-error" class="form-error" role="alert">Please select a size.</span>
+                </div>
+
+                <!-- Color -->
+                <div class="form-group">
+                  <label class="form-label" for="form-color">
+                    Hoodie Color <span class="text-red-400" aria-hidden="true">*</span>
+                  </label>
+                  <select id="form-color" name="color" class="form-input" required
+                    aria-required="true" aria-describedby="form-color-error">
+                    <option value="" disabled selected>Choose a color</option>
+                    <option value="Black">Black</option>
+                    <option value="Gray">Gray</option>
+                    <option value="Cream">Cream</option>
+                    <option value="Chaos Edition">Chaos Edition (+$5)</option>
+                  </select>
+                  <span id="form-color-error" class="form-error" role="alert">Please select a color.</span>
+                </div>
+
+                <!-- Custom text + char counter -->
+                <div class="form-group sm:col-span-2">
+                  <label class="form-label" for="form-custom-text">
+                    Custom Text on Hoodie
+                    <span id="char-count" class="ml-auto font-normal normal-case tracking-normal text-white/35">0/30</span>
+                  </label>
+                  <input id="form-custom-text" name="custom_text" type="text" class="form-input"
+                    placeholder="e.g. your name, a phrase — or leave blank for none"
+                    maxlength="30" aria-describedby="form-text-hint"
+                    oninput="document.getElementById('char-count').textContent = this.value.length + '/30'">
+                  <span id="form-text-hint" class="text-xs text-white/40 mt-1.5 block">Leave blank for standard design. Max 30 characters.</span>
+                </div>
+
+                <!-- Special instructions -->
+                <div class="form-group sm:col-span-2">
+                  <label class="form-label" for="form-instructions">Special Instructions</label>
+                  <textarea id="form-instructions" name="special_instructions"
+                    class="form-input" rows="3"
+                    placeholder="Placement notes, font preferences, anything else…"></textarea>
+                </div>
+
+              </div>
+
+              <!-- Error banner -->
+              <div id="form-error-msg" class="form-error-msg" role="alert" aria-live="polite">
+                <strong>Something went wrong.</strong> Please check your details and try again, or email us directly.
+              </div>
+
+              <!-- Submit -->
+              <div class="mt-6">
+                <button type="submit" class="btn-submit btn-animate w-full flex items-center justify-center gap-3 bg-white text-black font-bold rounded-2xl hover:bg-white/92 transition-all text-base shadow-xl shadow-white/8">
+                  <div class="spinner"></div>
+                  <span class="btn-text flex items-center gap-2">
+                    Send My Order
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                    </svg>
+                  </span>
+                </button>
+                <p class="text-center text-xs text-white/35 mt-3">
+                  We respond within 24 hours · Powered by <a href="https://formspree.io" target="_blank" rel="noopener" class="underline hover:text-white/60 transition-colors">Formspree</a>
+                </p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         LOOKBOOK
+         ============================================= -->
+    <section id="lookbook" class="py-20 md:py-28 relative" aria-labelledby="lookbook-heading">
+      <div class="container mx-auto px-4">
+        <div class="lookbook-card rounded-[28px] overflow-hidden reveal-element">
+          <div class="grid lg:grid-cols-2 min-h-[480px] lg:min-h-[580px]">
+            <div class="relative h-60 sm:h-80 lg:h-auto overflow-hidden">
+              <img
+                src="lookbook.png"
+                alt="Model wearing ROMP Oversized Premium Hoodie on the street"
+                class="absolute inset-0 w-full h-full object-cover object-center"
+                loading="lazy"
+              >
+              <div class="absolute inset-0" style="background:linear-gradient(to right, transparent 50%, #111111 100%)" aria-hidden="true"></div>
+            </div>
+            <div class="flex flex-col justify-center p-8 sm:p-12 lg:p-16 bg-[#111111]">
+              <span class="section-label mb-4">Lookbook</span>
+              <h2 id="lookbook-heading" class="text-3xl sm:text-4xl lg:text-5xl font-black leading-[1.05] mb-5">
+                More Than Fabric.<br>It's a Statement.
+              </h2>
+              <p class="text-white/65 leading-relaxed mb-8 max-w-md text-sm sm:text-base">
+                Our pieces speak for you. Clean designs, bold details, and a fit that feels just right — on and off the streets.
+              </p>
+              <div class="flex flex-wrap items-center gap-4">
+                <a href="#showcase" class="btn-secondary btn-animate group inline-flex">
+                  View Colors
+                  <svg class="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 17L17 7M17 7H7M17 7v10"/>
+                  </svg>
+                </a>
+                <a href="#customize" class="text-white/70 hover:text-white transition-colors font-semibold text-sm">
+                  Customize Yours →
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =============================================
+         NEWSLETTER
+         ============================================= -->
+    <section id="newsletter" class="py-20 relative" aria-labelledby="newsletter-heading">
+      <!-- Background panel -->
+      <div class="absolute inset-0 mx-4 sm:mx-8 lg:mx-16 rounded-[28px] bg-white/[0.03] border border-white/[0.07]" aria-hidden="true"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="max-w-lg mx-auto text-center py-8 reveal-element">
+          <span class="section-label">Stay in the loop</span>
+          <h2 id="newsletter-heading" class="text-3xl sm:text-4xl font-black mt-3 mb-2">Join the Movement</h2>
+          <p class="text-white/60 mb-8 text-sm leading-relaxed">Get early access to limited drops, exclusive offers, and style updates before anyone else.</p>
+          <form id="newsletter-form" class="flex flex-col sm:flex-row gap-3" aria-label="Newsletter signup">
+            <label for="newsletter-email" class="sr-only">Email address</label>
+            <input id="newsletter-email" type="email" name="email"
+              placeholder="Enter your email address"
+              class="newsletter-input" required autocomplete="email" aria-required="true">
+            <button type="submit" class="btn-primary btn-animate whitespace-nowrap">
+              Get Early Access
+            </button>
+          </form>
+          <p class="text-xs text-white/30 mt-4">No spam. Unsubscribe anytime. We respect your privacy.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =============================================
+       FOOTER
+       ============================================= -->
+  <footer class="border-t border-white/[0.07] py-14" role="contentinfo">
+    <div class="container mx-auto px-4">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+        <div>
+          <a href="#" class="text-2xl font-black tracking-tight font-mono hover:opacity-80 transition-opacity" aria-label="ROMP Home">ROMP.</a>
+          <p class="text-white/45 mt-4 text-sm leading-relaxed">Premium oversized hoodies for those who wear their attitude. Limited drops. Maximum energy.</p>
+          <div class="flex items-center gap-3 mt-5">
+            <a href="#" class="w-9 h-9 rounded-full bg-white/6 border border-white/10 hover:bg-white/12 flex items-center justify-center transition-all" aria-label="ROMP on Instagram">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/6 border border-white/10 hover:bg-white/12 flex items-center justify-center transition-all" aria-label="ROMP on TikTok">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
+            </a>
+            <a href="#" class="w-9 h-9 rounded-full bg-white/6 border border-white/10 hover:bg-white/12 flex items-center justify-center transition-all" aria-label="ROMP on X (Twitter)">
+              <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm mb-4 text-white">Shop</h4>
+          <ul class="space-y-3">
+            <li><a href="#showcase" class="text-white/50 hover:text-white text-sm transition-colors">All Colorways</a></li>
+            <li><a href="#collections" class="text-white/50 hover:text-white text-sm transition-colors">Collections</a></li>
+            <li><a href="#customize" class="text-white/50 hover:text-white text-sm transition-colors">Customize</a></li>
+            <li><a href="#lookbook" class="text-white/50 hover:text-white text-sm transition-colors">Lookbook</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm mb-4 text-white">Support</h4>
+          <ul class="space-y-3">
+            <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Contact Us</a></li>
+            <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Shipping Info</a></li>
+            <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Returns &amp; Exchanges</a></li>
+            <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">Sizing Guide</a></li>
+            <li><a href="#" class="text-white/50 hover:text-white text-sm transition-colors">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-bold text-sm mb-4 text-white">Quick Order</h4>
+          <p class="text-white/45 text-sm mb-5 leading-relaxed">Ready to get yours? Skip straight to the order form.</p>
+          <a href="#customize" class="btn-secondary btn-animate inline-flex text-sm px-5 py-2.5">
+            Customize Now →
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-8 border-t border-white/[0.07] flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-white/30 text-sm">&copy; 2025 ROMP. All rights reserved.</p>
+        <div class="flex items-center gap-6">
+          <a href="#" class="text-white/30 hover:text-white text-sm transition-colors">Privacy Policy</a>
+          <a href="#" class="text-white/30 hover:text-white text-sm transition-colors">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =============================================
+       CHATBOT WIDGET
+       ============================================= -->
+  <!--
+    ======================================================
+    CHATBOT INTEGRATION — Replace with your provider:
+
+    Chatbase:
+      <script>window.chatbaseConfig={chatbotId:"YOUR_ID"}</script>
+      <script src="https://www.chatbase.co/embed.min.js" chatbotId="YOUR_ID" defer></script>
+
+    Tidio:
+      <script src="//code.tidio.co/YOUR_KEY.js" async></script>
+
+    Crisp:
+      <script>
+        window.$crisp=[];window.CRISP_WEBSITE_ID="YOUR_ID";
+        (function(){var d=document,s=d.createElement("script");
+        s.src="https://client.crisp.chat/l.js";s.async=1;
+        d.getElementsByTagName("head")[0].appendChild(s);})();
+      </script>
+
+    After connecting a real provider, remove #chatbot-btn
+    and #chatbot-window below.
+    ======================================================
+  -->
+
+  <button id="chatbot-btn" aria-label="Open ROMP chat support" title="Chat with us">
+    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+    </svg>
+  </button>
+
+  <div id="chatbot-window" role="dialog" aria-modal="true" aria-label="ROMP Chat Support">
+    <div class="chatbot-header">
+      <div class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-full bg-accent/20 border border-accent/30 flex items-center justify-center" aria-hidden="true">
+          <svg class="w-4 h-4 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"/>
+          </svg>
+        </div>
+        <div>
+          <p class="font-bold text-sm">ROMP Support</p>
+          <div class="flex items-center gap-1.5">
+            <span class="w-2 h-2 bg-green-400 rounded-full" aria-hidden="true"></span>
+            <p class="text-xs text-white/50">Online · replies instantly</p>
+          </div>
+        </div>
+      </div>
+      <button id="chatbot-close" class="p-2 rounded-xl hover:bg-white/10 transition-colors" aria-label="Close chat">
+        <svg class="w-4 h-4 text-white/60" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+        </svg>
+      </button>
+    </div>
+    <div id="chatbot-messages" class="chatbot-messages" aria-live="polite" aria-label="Chat messages"></div>
+    <div class="chatbot-input-area">
+      <input id="chatbot-input" type="text" class="chatbot-input" placeholder="Ask about sizing, shipping…" aria-label="Type your message">
+      <button id="chatbot-send" class="w-10 h-10 rounded-full bg-accent flex items-center justify-center hover:bg-blue-600 transition-colors flex-shrink-0" aria-label="Send message">
+        <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Expose Motion One globally for script.js
+    if (typeof Motion === 'undefined' && typeof window.motion !== 'undefined') {
+      window.Motion = window.motion;
+    }
+  </script>
+
+  <!-- Showcase + Hero swatches sync -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const showcaseBtns   = document.querySelectorAll('.showcase-color-btn');
+      const heroSwatches   = document.querySelectorAll('.color-swatch');
+      const showcaseHoodie = document.getElementById('showcase-hoodie');
+      const mainHoodie     = document.getElementById('main-hoodie');
+
+      
+      const hoodieMap = {
+        black: 'black.img.png',
+        gray:  'gray.img.png',
+        cream: 'white.img.png',
+        chaos: 'indigo.img.png',
+      };
+      const altMap = {
+        black: 'ROMP Oversized Premium Hoodie — Black',
+        gray:  'ROMP Oversized Premium Hoodie — Gray',
+        cream: 'ROMP Oversized Premium Hoodie — Cream',
+        chaos: 'ROMP Oversized Premium Hoodie — Chaos Edition',
+      };
+
+      function switchColor(color) {
+        // Update showcase buttons
+        showcaseBtns.forEach(b => {
+          const isActive = b.dataset.color === color;
+          b.classList.toggle('active', isActive);
+          b.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+          const check = b.querySelector('.showcase-check');
+          if (check) check.style.opacity = isActive ? '1' : '0';
+        });
+
+        // Update hero swatches
+        heroSwatches.forEach(s => {
+          const isActive = s.dataset.color === color;
+          s.classList.toggle('active', isActive);
+          s.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+        });
+
+        // Swap both hoodie images with crossfade
+        [showcaseHoodie, mainHoodie].forEach(img => {
+          if (!img) return;
+          img.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
+          img.style.opacity = '0';
+          img.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            img.src = hoodieMap[color];
+            img.alt = altMap[color];
+            img.style.opacity = '1';
+            img.style.transform = 'scale(1)';
+          }, 300);
+        });
+
+        // Sync form colour select
+        const sel = document.getElementById('form-color');
+        if (sel) {
+          const map = { black:'Black', gray:'Gray', cream:'Cream', chaos:'Chaos Edition' };
+          sel.value = map[color] || '';
+        }
+      }
+
+      showcaseBtns.forEach(btn => btn.addEventListener('click', () => switchColor(btn.dataset.color)));
+      heroSwatches.forEach(sw  => sw.addEventListener('click',  () => switchColor(sw.dataset.color)));
+
+      // Size selector in hero card
+      document.querySelectorAll('.size-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          document.querySelectorAll('.size-btn').forEach(b => {
+            b.setAttribute('aria-pressed', 'false');
+            b.classList.remove('border-white/60', 'bg-white/15', 'text-white');
+            b.classList.add('border-white/15', 'bg-white/6');
+          });
+          btn.setAttribute('aria-pressed', 'true');
+          btn.classList.remove('border-white/15', 'bg-white/6');
+          btn.classList.add('border-white/60', 'bg-white/15', 'text-white');
+          // Sync form size select
+          const sel = document.getElementById('form-size');
+          if (sel) sel.value = btn.textContent.trim();
+        });
+      });
+    });
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
